@@ -74,7 +74,7 @@ while True:
               ||          |...|
               ||          |   |
               | \________/  O |
-              ~~~~~~~~~~~~~~~
+              ~~~~~~~~~~~~~~~~
               ''')
         print("You enter the right door and find a control room with many monitors and buttons")
         print("On one of the monitors, you see a distress signal from the nearby robotic assembly line.")
@@ -87,7 +87,12 @@ while True:
                 print("Using the control panel, you manage to shut down the assembly line and reprogram the rogue robots to assist you.")
                 print("With the help of the reprogrammed robots, you uncover a secret hatch leading to an underground lab.")
                 break
-            
+            elif action == 'ignore':
+                print("You decide to ignore the signal and explore the room. You find a keycard that grants you access to restricted areas of the lab.")
+                print("Using the keycard, you open a door that leads to the main control center of the lab.")
+                break
+            else: 
+                print("Invalid choice. Please type 'investigate' or 'ignore'.")
 
         break
     else:
