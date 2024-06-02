@@ -61,9 +61,12 @@ while True:
                 print("You decide to leave the room, but as you turn around, the door locks.")
                 print("The robot approaches you and in a static voice says 'If you wont help me, You'll join me here forever.")
                 print("Game Over.")
+                break
+            else:
+                print("Invalid choice. Please type 'help' or 'leave'.")
               
         
-
+        break
     elif choice == 'right':
         print('''
               ________________
@@ -74,7 +77,18 @@ while True:
               ~~~~~~~~~~~~~~~
               ''')
         print("You enter the right door and find a control room with many monitors and buttons")
-        
+        print("On one of the monitors, you see a distress signal from the nearby robotic assembly line.")
+        print("Do you investigate the signal or ignore it and explore the room? (investigate/ignore)")
+
+        while True:
+            action = input("What do you do? (investigate/ignore): ").lower()
+            if action == 'investigate':
+                print("You decide to investigate the signal. You discover that the assembly line is malfunctioning and producing rogue robots.")
+                print("Using the control panel, you manage to shut down the assembly line and reprogram the rogue robots to assist you.")
+                print("With the help of the reprogrammed robots, you uncover a secret hatch leading to an underground lab.")
+                break
+            
+
         break
     else:
         print("Invalid choice. Please type 'left' or 'right'.")
