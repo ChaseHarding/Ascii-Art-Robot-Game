@@ -29,15 +29,28 @@ _ ||||||||| _ | | __ | | __ ||______|| __|
      |_|_|          |_|__|
      [__)_)        (_(___]
       ''')
+while True:
+    
+    print("Welcome to Engineer's Odyssey: Robo Rescue.")
+    user_input = input("Type 'init' to start your adventure: ").lower()
+    if user_input == 'init':
+        break
+    else:
+      print("Invalid input. Please type 'init' to start the game.")
 
-print("Welcome to Engineer's Odyssey: Robo Rescue.")
-user_input = input("Type 'init' to start your adventure: ").lower()
 
-if user_input == 'init':
-    print("Your adventure begins now!")
-    print("You find yourself in a labratory filled with various robotic parts.")
-    print("There are two doors: one to your left and one to your right.")
+print("Your adventure begins now!")
+print("You find yourself in a labratory filled with various robotic parts.")
+print("There are two doors: one to your left and one to your right.")
+
+while True:
     choice = input("Do you choose the left door or the right door? (left/right): ").lower()
-
-else:
-    print("Invalid input. Please type 'init' to start the game.")
+    if choice == 'left':
+        print("You enter the left door and find a room full of advanced robotic prototypes.")
+        break
+    elif choice == 'right':
+        print("You enter the right door and find a control room with many monitors and buttons")
+        break
+    else:
+        print("Invalid choice. Please type 'left' or 'right'.")
+    
