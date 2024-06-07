@@ -62,12 +62,16 @@ while True:
                     if button == 'red':
                         print("You press the red button and the alarms begin blaring. Security robots storm the room and apprehend you.")
                         print("Game Over...")
-
-                    if button == "blue":
+                        break
+                    elif button == "blue":
                         print("You press the blue button and a screen flickers on. You're able to make out the main systems controlling the rogue robots.")
                         print("You shut down the systems and watch all the rogue robots slowy power down and begin falling over.")
                         print("Congratulations, you've completed your quest to save the lab!")
-                break
+                        break
+                    else:
+                        print("Invalid choice. Please type 'red' or 'blue'.")
+
+                    break
             elif action == 'leave':
                 print("You decide to leave the room, but as you turn around, the door locks.")
                 print("The robot approaches you and in a static voice says 'If you wont help me, You'll join me here forever.")
@@ -103,6 +107,7 @@ while True:
                     if lever == 'green':
                         print("You pull the green lever and the lights go out. Security robots storm in apprehend you in the darkness")
                         print("Game Over...")
+
                 break
             elif action == 'ignore':
                 print("You decide to ignore the signal and explore the room. You find a keycard that grants you access to restricted areas of the lab.")
