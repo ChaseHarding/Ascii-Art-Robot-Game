@@ -61,16 +61,17 @@ while True:
                     button = input("Do you press the red button or the green button? (red/blue)").lower()
                     if button == 'red':
                         print("You press the red button and the alarms begin blaring. Security robots storm the room and apprehend you.")
-                        print("Game over")
+                        print("Game Over...")
 
                     if button == "blue":
                         print("You press the blue button and a screen flickers on. You're able to make out the main systems controlling the rogue robots.")
-                        print("You shut down the ")
+                        print("You shut down the systems and watch all the rogue robots slowy power down and begin falling over.")
+                        print("Congratulations, you've completed your quest to save the lab!")
                 break
             elif action == 'leave':
                 print("You decide to leave the room, but as you turn around, the door locks.")
                 print("The robot approaches you and in a static voice says 'If you wont help me, You'll join me here forever.")
-                print("Game Over.")
+                print("Game Over...")
                 break
             else:
                 print("Invalid choice. Please type 'help' or 'leave'.")
@@ -96,6 +97,12 @@ while True:
                 print("You decide to investigate the signal. You discover that the assembly line is malfunctioning and producing rogue robots.")
                 print("Using the control panel, you manage to shut down the assembly line and reprogram the rogue robots to assist you.")
                 print("With the help of the reprogrammed robots, you uncover a secret hatch leading to an underground lab.")
+                print("While in the underground lab, you find a panel with two levers: one green and one yellow.")
+                while True: 
+                    lever = input("Do you pull the green lever or the yellow? (green/yellow)").lower()
+                    if lever == 'green':
+                        print("You pull the green lever and the lights go out. Security robots storm in apprehend you in the darkness")
+                        print("Game Over...")
                 break
             elif action == 'ignore':
                 print("You decide to ignore the signal and explore the room. You find a keycard that grants you access to restricted areas of the lab.")
