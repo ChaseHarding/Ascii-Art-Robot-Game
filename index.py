@@ -62,6 +62,10 @@ while True:
                     if button == 'red':
                         print("You press the red button and the alarms begin blaring. Security robots storm the room and apprehend you.")
                         print("Game over")
+
+                    if button == "blue":
+                        print("You press the blue button and a screen flickers on. You're able to make out the main systems controlling the rogue robots.")
+                        print("You shut down the ")
                 break
             elif action == 'leave':
                 print("You decide to leave the room, but as you turn around, the door locks.")
