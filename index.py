@@ -55,8 +55,14 @@ while True:
             if action == 'help':
                 print("You agree to help the robot. Together, you manage to complete it's programming and it offers to assist you in your quest.")
                 print("The robot guides you to a hidden passage behind the room, leading you to the main control center of the lab")
+                print("In the control center, you see a panel with two buttons: one red and one blue.")
+
+                while True: 
+                    button = input("Do you press the red button or the green button? (red/blue)").lower()
+                    if button == 'red':
+                        print("You press the red button and the alarms begin blaring. Security robots storm the room and apprehend you.")
+                        print("Game over")
                 break
-            
             elif action == 'leave':
                 print("You decide to leave the room, but as you turn around, the door locks.")
                 print("The robot approaches you and in a static voice says 'If you wont help me, You'll join me here forever.")
