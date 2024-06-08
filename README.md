@@ -9,3 +9,11 @@ In this game, you find yourself in a labratory filled with various robotic parts
 ## Getting Started
 
 To run this game, you need to have python installed on your computer. You can download and install Python from [python.org](https://www.python.org/).
+
+### Running the Game
+
+1. Clone or download this repository to your local machine.
+2. Open a terminal and navigate to the directory where the game script is located.
+3. Run the game by executing the follow command:
+   ```sh
+   python game.py
