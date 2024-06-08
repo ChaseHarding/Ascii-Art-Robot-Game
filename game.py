@@ -68,7 +68,7 @@ while True:
             action = input("What do you do? (help/leave) : ").lower()
             if action == 'help':
                 print("You agree to help the robot. Together, you manage to complete it's programming and it offers to assist you in your quest.")
-                print("The robot guides you to a hidden passage behind the room, leading you to the main control center of the lab")
+                print("The robot guides you to a hidden passage behind the room, leading you to the main control center of the lab.")
                 print("In the control center, you see a panel with two buttons: one red and one blue.")
 
                 while True: 
@@ -77,15 +77,14 @@ while True:
                         print("You press the red button and the alarms begin blaring. Security robots storm the room and apprehend you.")
                         print("Game Over...")
                         break
-                    elif button == "blue":
+                    elif button == 'blue':
                         print("You press the blue button and a screen flickers on. You're able to make out the main systems controlling the rogue robots.")
                         print("You shut down the systems and watch all the rogue robots slowy power down and begin falling over.")
                         print("Congratulations, you've completed your quest to save the lab!")
                         break
                     else:
                         print("Invalid choice. Please type 'red' or 'blue'.")
-
-                    break
+                break
             elif action == 'leave':
                 print("You decide to leave the room, but as you turn around, the door locks.")
                 print("The robot approaches you and in a static voice says 'If you wont help me, You'll join me here forever.")
@@ -93,8 +92,6 @@ while True:
                 break
             else:
                 print("Invalid choice. Please type 'help' or 'leave'.")
-              
-        
         break
     elif choice == 'right':
         print('''
@@ -105,7 +102,7 @@ while True:
               | \________/  O |
               ~~~~~~~~~~~~~~~~
               ''')
-        print("You enter the right door and find a control room with many monitors and buttons")
+        print("You enter the right door and find a control room with many monitors and buttons.")
         print("On one of the monitors, you see a distress signal from the nearby robotic assembly line.")
         print("Do you investigate the signal or ignore it and explore the room? (investigate/ignore)")
 
@@ -131,7 +128,7 @@ while True:
                 while True: 
                     lever = input("Do you pull the green lever or the yellow? (green/yellow) : ").lower()
                     if lever == 'green':
-                        print("You pull the green lever and the lights go out. Security robots storm in apprehend you in the darkness")
+                        print("You pull the green lever and the lights go out. Security robots storm in apprehend you in the darkness.")
                         print("Game Over...")
                         break
                     elif lever == 'yellow':
@@ -141,16 +138,14 @@ while True:
                         break
                     else:
                         print("Invalid input, please type 'green' or 'yellow'.")
-
-
                 break
             elif action == 'ignore':
                 print("You decide to ignore the signal and explore the room. You find a keycard that grants you access to restricted areas of the lab.")
                 print("Using the keycard, you open a door that leads to the reactor room of the lab.")
                 print("As you approach the controls for the reactor, you spot a mechanics toolkit below what looks like a panel that was being worked on.")
                 while True:
-                    repair = input("Do you continue towards the reactor controls or the panel next to the toolkit? (controlls/panel) : ").lower()
-                    if repair == 'controlls':
+                    repair = input("Do you continue towards the reactor controls or the panel next to the toolkit? (controls/panel) : ").lower()
+                    if repair == 'controls':
                         print('''
                             ____________________________________                 ______________
                             |------|------|     __   __   __     |     ___________     |           () |
@@ -175,8 +170,8 @@ while True:
                                                                                                     |
                                                                                                     |
                               ''')
-                        print("You disregard the panel left behind and go towards the reactor controlls.")
-                        print("With a sudden sense of uncertainty, you begin messing with the controlls. Your hands drift towards a a screen on the left.")
+                        print("You disregard the panel left behind and go towards the reactor controls.")
+                        print("With a sudden sense of uncertainty, you begin messing with the controls. Your hands drift towards a a screen on the left.")
                         print("A Crack bursts out of the main pipe, in a  single moment, the room flashes, followed by the sounds of destuction, then silence.")
                         print("Game Over...")
                         break
@@ -200,19 +195,18 @@ while True:
                             |)    |           --   |    (|
                         das |_____|[]______________|\___/
                               ''')
-                        print("You dismiss the reactor, approaching the panel on the wall")
-                        print("You spot a trail a blood trailing off and a pair of wire cutters left behind")
+                        print("You dismiss the reactor, approaching the panel on the wall.")
+                        print("You spot a trail a blood trailing off and a pair of wire cutters left behind.")
                         print("picking up the tool you glance back at the panel, removing the cover reveals several red wires.")
                         print("a sudden chill climbs up your back, without hesitation you jab at the wires and cut the wires.")
                         print("all operations have been stopped, emergency power started up and all rogue robots have powered down.")
                         print("Congratulations, You managed to save the lab!")
                         break
                     else:
-                        print("Invalid input, please type 'controlls' or 'panel'.")
+                        print("Invalid input, please type 'controls' or 'panel'.")
                 break
             else: 
                 print("Invalid choice. Please type 'investigate' or 'ignore'.")
-
         break
     else:
         print("Invalid choice. Please type 'left' or 'right'.")
