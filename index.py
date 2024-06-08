@@ -42,6 +42,20 @@ while True:
 print("Your adventure begins now!")
 print("You find yourself in a labratory filled with various robotic parts.")
 print("There are two doors: one to your left and one to your right.")
+print('''
+            __________
+           |  __  __  |
+           | |  ||  | |
+           | |  ||  | |
+           | |__||__| |
+           |  __  __()|
+           | |  ||  | |
+           | |  ||  | |
+           | |  ||  | |
+           | |  ||  | |
+           | |__||__| |
+ejm        |__________|
+      ''')
 
 while True:
     choice = input("Do you choose the left door or the right door? (left/right) : ").lower()
