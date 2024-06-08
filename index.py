@@ -102,6 +102,18 @@ while True:
                 print("Using the control panel, you manage to halt and reprogram the rogue robots to assist you.")
                 print("With the help of the reprogrammed robots, you uncover a secret hatch leading to an underground lab.")
                 print("While in the underground lab, you find a panel with two levers: one green and one yellow.")
+                print('''
+                     ___ (@)
+                    |.-.|/
+                    || |/
+                    || /|
+                    ||/||
+                    || ||
+                    ||_||
+                    '---'
+
+                LGB                  
+                      ''')
                 while True: 
                     lever = input("Do you pull the green lever or the yellow? (green/yellow) : ").lower()
                     if lever == 'green':
@@ -125,12 +137,55 @@ while True:
                 while True:
                     repair = input("Do you continue towards the reactor controls or the panel next to the toolkit? (controlls/panel) : ").lower()
                     if repair == 'controlls':
+                        print('''
+                            ____________________________________                 ______________
+                            |------|------|     __   __   __     |     ___________     |           () |
+                            | 64X4 | 64X4 | || |  | |  | |  |    |    |           |    |           ___|
+                            |------|------| || |  | |  | |  |    |____|           |____|         || D |
+                            | 64X4 | 64X4 | || |__| |__| |__|                 ________________  ||| I |
+                            |------|------|  |  ________   ______   ______   | ADV476KN50     | ||| P |
+                            | 64X4 | 64X4 |    |TRIDENT | |______| |______|  | 1-54BV  8940   | ||| S |
+                            |------|------| || |TVGA    | |______| |______|  |________________| |||___|
+                            | 64X4 | 64X4 | || |8800CS  |          ________________                ___|
+                            |------|------| || |11380029|    LOW->|  /\ SUPER VGA  | _________    |   |
+                            | 64X4 | 64X4 |     --------    BIOS  | \/         (1) ||_________|   | 1 |
+                            |------|------| ||  ______  J  ______ |________________| _________    | 5 |
+                            | 64X4 | 64X4 | || |______| 2 |______| ________________ |_________|   |___|
+                            |------|------| ||  ________   ______ |  /\ SUPER VGA  |               ___|
+                            | 64X4 | 64X4 |    |________| |______|| \/         (2) |   _________  |   |
+                            |------|------| ()              HIGH->|________________|  |_________| | 9 |
+                            | 64X4 | 64X4 |     ________   _________   _____________   _________  |   |
+                            |______|______|__  |________| |_________| |_____________| |_________| |___|
+                                            |               __    TVGA-1623D                    _ () |
+                                            |LLLLLLLLLLLLLL|  |LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL| |___|
+                                                                                                    |
+                                                                                                    |
+                              ''')
                         print("You disregard the panel left behind and go towards the reactor controlls.")
                         print("With a sudden sense of uncertainty, you begin messing with the controlls. Your hands drift towards a a screen on the left.")
                         print("A Crack bursts out of the main pipe, in a  single moment, the room flashes, followed by the sounds of destuction, then silence.")
                         print("Game Over...")
                         break
                     elif repair == 'panel':
+                        print('''
+                            ___________________________
+                            |[]                        []|
+                            |[]                        []|
+                            |                            |
+                            |            . .             |
+                            |          `    _`           |
+                            |         `  ()|_|`          |
+                            |         `       `          |
+                            |          ` . . `           |
+                            |      ________________      |
+                            |     |          ____  |     |
+                            |     |         |    | |     |
+                            |     |         |    | |     |
+                            |     |         |    | |     |
+                            |()   |         |_  _| |   ()|
+                            |)    |           --   |    (|
+                        das |_____|[]______________|\___/
+                              ''')
                         print("You dismiss the reactor, approaching the panel on the wall")
                         print("You spot a trail a blood trailing off and a pair of wire cutters left behind")
                         print("picking up the tool you glance back at the panel, removing the cover reveals several red wires.")
