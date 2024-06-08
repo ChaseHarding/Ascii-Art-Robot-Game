@@ -72,7 +72,7 @@ while True:
                 print("In the control center, you see a panel with two buttons: one red and one blue.")
 
                 while True: 
-                    button = input("Do you press the red button or the green button? (red/blue) : ").lower()
+                    button = input("Do you press the red button or the blue button? (red/blue) : ").lower()
                     if button == 'red':
                         print("You press the red button and the alarms begin blaring. Security robots storm the room and apprehend you.")
                         print("Game Over...")
