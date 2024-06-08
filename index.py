@@ -99,7 +99,7 @@ while True:
             action = input("What do you do? (investigate/ignore): ").lower()
             if action == 'investigate':
                 print("You decide to investigate the signal. You discover that the assembly line is malfunctioning and producing rogue robots.")
-                print("Using the control panel, you manage to shut down the assembly line and reprogram the rogue robots to assist you.")
+                print("Using the control panel, you manage to halt and reprogram the rogue robots to assist you.")
                 print("With the help of the reprogrammed robots, you uncover a secret hatch leading to an underground lab.")
                 print("While in the underground lab, you find a panel with two levers: one green and one yellow.")
                 while True: 
@@ -107,6 +107,15 @@ while True:
                     if lever == 'green':
                         print("You pull the green lever and the lights go out. Security robots storm in apprehend you in the darkness")
                         print("Game Over...")
+                        break
+                    elif lever == 'yellow':
+                        print("You pull the yellow lever and a secret door opens, revealing the main control systems responsible for the rogue robots.")
+                        print("You shut down all operations, powering down the assembly line and restoring power back to the upper levels of the lab.")
+                        print("Congratulations, you've completed your quest to save the lab!")
+                        break
+                    else:
+                        print("Invalid input, please type 'green' or 'yellow'.")
+
 
                 break
             elif action == 'ignore':
